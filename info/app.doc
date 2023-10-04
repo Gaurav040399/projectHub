@@ -1,0 +1,45 @@
+Project Structure Review:
+        It has two main part 
+            1) client [Frontend],
+            2) server [Backend]
+        
+        in the client we app folder where all neccesary data will be available,and tsconfig,json file and node_modules.
+
+        In app folder we can work or if we want to create compopnant out side this folder we also feel free to do this. in this project we have to create few section 
+
+        For User:
+            Login, Register.
+            User has different Role: ["Admin", "Project Manager", "Team Member"]
+
+            Team Management: Users can create and manage teams. Team assignments play a crucial role in project collaboration:
+            Team Name: A unique identifier for the team.
+            Team Members: Users belonging to the team.
+
+        User Authentication and Role base Access
+        Project Management
+        Task Management
+        Dashboard
+        Team Management
+        Notification
+
+
+
+
+Angular CLI Commands:
+        for creating new project : ng new project_name
+
+        for creating Modules : ng generate module module_name 
+        or 
+        (short form) ng g m module_name
+
+        for creating componant: ng generate componant componant_name
+        or
+        (short form) ng g c componant_name
+
+        for open the project to see in localhost :
+        ng serve 
+        or
+        ng serve --open (it will directly open in your browser)
+
+TypeScript Configuration:
+        available in created project itself.

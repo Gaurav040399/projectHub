@@ -3,16 +3,19 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { UserModule } from './user/user.module';
+import { ProjectListingComponent } from './project-listing/project-listing.component';
+import { TaskListingComponent } from './task-listing/task-listing.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    ProjectListingComponent,
+    TaskListingComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    UserModule
+  
   ],
   providers: [],
   bootstrap: [AppComponent]

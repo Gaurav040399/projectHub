@@ -1,0 +1,10 @@
+<div *ngFor="let task of tasks" class="task">
+    <h1>{{task.title}}</h1>
+    <p>{{task.description}}</p>
+    <p>{{task.dueDate}}</p>
+    <p>{{task.priority}}</p>
+    <p>{{task.status}}</p>
+    <button (click)="deleteTask(task)" class="btn">Delete</button>
+    <button #myButton (click)="captureValue(myButton.value)">Click me</button>
+
+</div>

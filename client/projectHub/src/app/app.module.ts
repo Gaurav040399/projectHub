@@ -1,21 +1,25 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { ReactiveFormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { ProjectListingComponent } from './project-listing/project-listing.component';
-import { TaskListingComponent } from './task-listing/task-listing.component';
+import { LoginComponent } from './login/login.component';
+import { SignupComponent } from './signup/signup.component';
+import { HomeComponent } from './home/home.component';
+import { ProjectsComponent } from './projects/projects.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    ProjectListingComponent,
-    TaskListingComponent
+    LoginComponent, 
+    SignupComponent, 
+    HomeComponent, ProjectsComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-  
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
